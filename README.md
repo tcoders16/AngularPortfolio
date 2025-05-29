@@ -45,7 +45,8 @@ This is a personal developer portfolio built using **Angular 16+** and **Angular
 ---
 
 ## Folder Structure
-
+<pre lang="markdown"><code>
+```
 src/
 ├── app/
 │   ├── about/
@@ -54,13 +55,16 @@ src/
 │   ├── header/
 │   ├── projects/
 │   ├── interfaces/
-│   └── app.component.ts / .html / .css
+│   └── app.component.ts
+│       app.component.html
+│       app.component.css
 ├── assets/
 │   └── images/
 ├── styles.css
 ├── index.html
+```
+</code></pre>
 
----
 
 ## Setup Instructions
 
