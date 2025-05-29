@@ -72,55 +72,64 @@ src/
 
 ```bash
 npm install -g @angular/cli
+```
 
-    2.	Clone the repository and navigate into the project folder
+2. **Clone the repository and navigate into the project folder**
 
+```bash
 cd your-project-folder
+```
 
-    3.	Install dependencies
+3. **Install dependencies**
 
+```bash
 npm install
+```
 
-    4.	Start the development server
+4. **Start the development server**
 
+```bash
 ng serve --open
+```
 
+---
 
-⸻
-
-Deployment Ready
+## Deployment Ready
 
 This project can be deployed on:
-    •	GitHub Pages
-    •	Firebase Hosting
-    •	Netlify
-    •	Vercel (with SSR if needed)
+
+- GitHub Pages
+- Firebase Hosting
+- Netlify
+- Vercel (with SSR if needed)
 
 Make sure to run a production build with:
 
+```bash
 ng build --configuration production
+```
 
+---
 
-⸻
+## Rubric Compliance Checklist
 
-Rubric Compliance Checklist
+| Requirement                                      | Status |
+|--------------------------------------------------|--------|
+| Angular application using Angular CLI            | ✅ Yes |
+| Angular Material used (e.g., MatCardModule)      | ✅ Yes |
+| Components created: header, about, projects, etc.| ✅ Yes |
+| Projects displayed using 5 individual cards      | ✅ Yes |
+| No tabs used in layout                           | ✅ Yes |
+| Content driven by variables and interfaces       | ✅ Yes |
+| Interpolation and pipes used (`{{ }}`, `date`)   | ✅ Yes |
+| Data shared using `@Input()`                     | ✅ Yes |
+| Unique CSS styling per section                   | ✅ Yes |
 
-Requirement	Status
-Angular application using Angular CLI	✅ Yes
-Angular Material used (e.g., MatCardModule)	✅ Yes
-Components created: header, about, projects, etc.	✅ Yes
-Projects displayed using 5 individual cards	✅ Yes
-No tabs used in layout	✅ Yes
-Content driven by variables and interfaces	✅ Yes
-Interpolation and pipes used ({{ }}, date)	✅ Yes
-Data shared using @Input()	✅ Yes
-Unique CSS styling per section	✅ Yes
+---
 
+## Author
 
-⸻
+**Omkumar Solanki**  
+Full Stack Developer | AI Engineer | iOS SwiftUI-Storyboard  
 
-Author
-
-Omkumar Solanki
-Full Stack Developer | AI Engineer | IOS SwiftUI-Storyboard
-    •	LinkedIn: https://www.linkedin.com/in/omkumar-solanki-atluxuarywxtchbusinessmandeveloper2/
+- LinkedIn: [https://www.linkedin.com/in/omkumar-solanki-atluxuarywxtchbusinessmandeveloper2/](https://www.linkedin.com/in/omkumar-solanki-atluxuarywxtchbusinessmandeveloper2/)
