@@ -1,0 +1,30 @@
+.header-container {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, #e0f7fa, #fce4ec);
+  border-bottom: 5px solid #00796b;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 20px 20px;
+}
+
+.header-container h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  color: #00796b;
+  text-shadow: 1px 1px #b2dfdb;
+}
+
+.header-container h2 {
+  font-size: 1.75rem;
+  color: #d81b60;
+  margin: 0.3rem 0;
+}
+
+.header-container h3 {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #6a1b9a;
+  margin-top: 0.5rem;
+}

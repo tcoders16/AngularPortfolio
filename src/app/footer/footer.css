@@ -1,0 +1,18 @@
+.footer-bar {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-top: 3px solid #4caf50;
+  font-family: Arial, sans-serif;
+}
+
+.footer-bar h3 {
+  margin: 0.5rem;
+  color: #2e7d32;
+}
+
+.footer-bar h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
