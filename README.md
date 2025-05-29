@@ -1,59 +1,122 @@
-# ThirdApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.0.
+## Preview
 
-## Development server
+![Portfolio Screenshot](assets/preview.jpg)
 
-To start a local development server, run:
+
+# Angular Developer Portfolio App (Material UI)
+
+This is a personal developer portfolio built using **Angular 16+** and **Angular Material**. The application showcases the use of Angular components, `@Input()` data sharing, string interpolation, custom styling, and modern UI design principles. The layout strictly avoids tabs, as required by the assignment.
+
+---
+
+## Features
+
+- Component-based architecture with shared interfaces
+- Material Design integration using `MatCardModule`
+- Five interactive project cards with dynamic data
+- Responsive layout using Flexbox and CSS enhancements
+- Data binding with `@Input()` and interpolation
+- Use of Angular pipes (`date`) for formatting
+- Unique visual design for each section
+
+---
+
+## Component Overview
+
+| Component   | Description                                                                 |
+|-------------|------------------------------------------------------------------------------|
+| `header`    | Displays developer name, role, and motto via bound `@Input()` interface     |
+| `about`     | Descriptive paragraph about the developer with styled text                  |
+| `projects`  | Contains 5 project cards built with Angular Material and `@Input()` values   |
+| `contact`   | Social media links dynamically displayed using interface + `@Input()`       |
+| `footer`    | Technology list and system date using Angular pipes                         |
+
+---
+
+## Technologies Used
+
+- Angular 16+
+- Angular CLI
+- Angular Material (`MatCardModule`)
+- TypeScript
+- HTML5 + CSS3
+
+---
+
+## Folder Structure
+
+src/
+├── app/
+│   ├── about/
+│   ├── contact/
+│   ├── footer/
+│   ├── header/
+│   ├── projects/
+│   ├── interfaces/
+│   └── app.component.ts / .html / .css
+├── assets/
+│   └── images/
+├── styles.css
+├── index.html
+
+---
+
+## Setup Instructions
+
+1. **Install Angular CLI (if not already installed)**
 
 ```bash
-ng serve
-```
+npm install -g @angular/cli
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+    2.	Clone the repository and navigate into the project folder
 
-## Code scaffolding
+cd your-project-folder
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+    3.	Install dependencies
 
-```bash
-ng generate component component-name
-```
+npm install
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+    4.	Start the development server
 
-```bash
-ng generate --help
-```
+ng serve --open
 
-## Building
 
-To build the project run:
+⸻
 
-```bash
-ng build
-```
+Deployment Ready
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+This project can be deployed on:
+    •	GitHub Pages
+    •	Firebase Hosting
+    •	Netlify
+    •	Vercel (with SSR if needed)
 
-## Running unit tests
+Make sure to run a production build with:
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+ng build --configuration production
 
-```bash
-ng test
-```
 
-## Running end-to-end tests
+⸻
 
-For end-to-end (e2e) testing, run:
+Rubric Compliance Checklist
 
-```bash
-ng e2e
-```
+Requirement	Status
+Angular application using Angular CLI	✅ Yes
+Angular Material used (e.g., MatCardModule)	✅ Yes
+Components created: header, about, projects, etc.	✅ Yes
+Projects displayed using 5 individual cards	✅ Yes
+No tabs used in layout	✅ Yes
+Content driven by variables and interfaces	✅ Yes
+Interpolation and pipes used ({{ }}, date)	✅ Yes
+Data shared using @Input()	✅ Yes
+Unique CSS styling per section	✅ Yes
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
+⸻
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Author
+
+Omkumar Solanki
+Full Stack Developer & AI Engineer
+    •	LinkedIn: https://www.linkedin.com/in/omkumar-solanki-atluxuarywxtchbusinessmandeveloper2/
