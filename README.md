@@ -1,7 +1,7 @@
 
 ## Preview
 
-![Portfolio Screenshot](images/preview.png)
+![Portfolio Screenshot](preview.png)
 
 
 # Angular Developer Portfolio App (Material UI)
