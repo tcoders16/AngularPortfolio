@@ -118,5 +118,5 @@ Unique CSS styling per section	✅ Yes
 Author
 
 Omkumar Solanki
-Full Stack Developer & AI Engineer
+Full Stack Developer | AI Engineer | IOS SwiftUI-Storyboard
     •	LinkedIn: https://www.linkedin.com/in/omkumar-solanki-atluxuarywxtchbusinessmandeveloper2/
