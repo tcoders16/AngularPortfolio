@@ -1,65 +1,46 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import {MaterialModule} from './modules/material-ui.module';
-import {CommonModule} from '@angular/common';
+import { MaterialModule } from './modules/material-ui.module';
 
-import {FooterInfo} from "./interfaces/project-interfaces"
+// Interfaces
+import { HeaderInfo, FooterInfo, ContactLinks, Project } from './interfaces/project-interfaces';
 
-
-import { Project } from './interfaces/project-interfaces';
-// importing components
-import { Footer } from './footer/footer';
+// Standalone components
 import { Header } from './header/header';
+import { Footer } from './footer/footer';
 import { Contact } from './contact/contact';
-
-import { About } from './about/about';
-
-
-//interface
-import { ContactLinks } from './interfaces/project-interfaces';
+import { About} from './about/about';
 import { Projects } from './projects/projects';
+import { FormsModule } from '@angular/forms';
+// Shared data
+import { HEADER_INFO, FOOTER_INFO, CONTACT_LINKS, PROJECTS, ABOUT_TEXT } from './shated/data';
 
 @Component({
   selector: 'app-root',
-  imports: [ CommonModule, MaterialModule,Footer, Header, CommonModule, About, Contact, Projects], 
+  standalone: true,
+  imports: [
+    CommonModule,
+    MaterialModule,
+    RouterOutlet,
+    Header,
+    Footer,
+    Contact,
+    About,
+    FormsModule,
+    Projects
+  ],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 export class App {
-  protected title = 'thirdApp';
-  
-    contactInfo: ContactLinks = {
-    instagram: 'https://www.instagram.com/kirat_ins/',
-    linkedin: 'https://www.linkedin.com/in/omkumar-solanki-atluxuarywxtchbusinessmandeveloper2/',
-    youtube: 'https://youtube.com/@omkumar'
-  };
+  title = 'thirdApp';
 
-  footerData: FooterInfo = {
-    technologies: 'Angular, TypeScript, HTML, CSS, Angular Material'
-  };
-    project1: Project = {
-    title: 'Lost & Found AI',
-    subtitle: 'Swift + Firebase',
-    image: 'assets/images/project1.webp'
-  };
-  project2: Project = {
-    title: 'Crypto Wallet',
-    subtitle: 'React + Tailwind',
-    image: 'assets/images/project2.png'
-  };
-  project3: Project = {
-    title: 'RAG Chatbot',
-    subtitle: 'Node + Pinecone',
-    image: 'assets/images/project3.png'
-  };
-  project4: Project = {
-    title: 'Matrix Portfolio',
-    subtitle: 'React + Vite',
-    image: 'assets/images/project4.png'
-  };
-  project5: Project = {
-    title: 'GitHub CLI',
-    subtitle: 'Node + GPT-4o',
-    image: 'assets/images/project5.png'
-  };
-  }
+  darkMode: boolean = false;
+
+  headerInfo: HeaderInfo = HEADER_INFO;
+  footerData: FooterInfo = FOOTER_INFO;
+  contactInfo: ContactLinks = CONTACT_LINKS;
+  projects: Project[] = PROJECTS;
+  aboutText: string = ABOUT_TEXT;
+}

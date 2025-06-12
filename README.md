@@ -36,7 +36,7 @@ This is a personal developer portfolio built using **Angular 16+** and **Angular
 
 ## Technologies Used
 
-- Angular 16+
+- Angular 
 - Angular CLI
 - Angular Material (`MatCardModule`)
 - TypeScript

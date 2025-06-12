@@ -1,16 +1,16 @@
-<!-- src/app/app.component.html -->
-<app-header></app-header>
-<app-about></app-about>
-<app-contact [links]="contactInfo"></app-contact>
 
-<app-projects
-  [project1]="project1"
-  [project2]="project2"
-  [project3]="project3"
-  [project4]="project4"
-  [project5]="project5"
-></app-projects>
+<label class="dark-toggle">
+  <input type="checkbox" [(ngModel)]="darkMode" />
+  <span class="slider"></span>
+</label>
 
 
+<app-header [darkMode]="darkMode"></app-header>
+<app-about [darkMode]="darkMode"></app-about>
+<app-contact [links]="contactInfo" [darkMode]="darkMode"></app-contact>
 
-<app-footer [footerData]="footerData"></app-footer>
+<app-projects [projects]="projects" [darkMode]="darkMode"></app-projects>
+
+
+
+<app-footer [footerData]="footerData" [darkMode]="darkMode"></app-footer>
