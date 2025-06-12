@@ -16,7 +16,9 @@ export interface ContactLinks {
 }
 
 export interface Project {
+  id: number;
   title: string;
   subtitle: string;
   image: string;
+  important: boolean;
 }

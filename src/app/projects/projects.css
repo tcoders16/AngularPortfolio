@@ -45,3 +45,32 @@ mat-card-subtitle {
   text-align: center;
   display: block;
 }
+
+
+
+
+
+
+
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.project-card {
+  width: 250px;
+}
+
+.dark-projects {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.light-projects {
+  background-color: #ffffff;
+  color: black;
+}
