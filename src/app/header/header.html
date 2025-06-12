@@ -1,5 +1,5 @@
-<header class="header-container">
+<header class="header-container" [ngClass]="{ 'dark-header': darkMode, 'light-header': !darkMode }">
   <h1>{{ info.name }}</h1>
-  <h2>{{ info.role }}</h2>
-  <h3>{{ info.motto }}</h3>
+  <h3>{{ info.role }}</h3>
+  <p class="motto-text">“{{ info.motto }}”</p>
 </header>

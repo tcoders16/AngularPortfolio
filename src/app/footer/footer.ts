@@ -1,18 +1,18 @@
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-// import { Component } from '@angular/core';
 import { MaterialModule } from '../modules/material-ui.module';
-import {Component, Input} from '@angular/core';
+import { FooterInfo } from '../interfaces/project-interfaces';
 
-
-// Define the Tech--> interface
-import {FooterInfo} from '../interfaces/project-interfaces';
 @Component({
   selector: 'app-footer',
-  imports: [ CommonModule, MaterialModule],
+  standalone: true,
+  imports: [CommonModule, MaterialModule],
   templateUrl: './footer.html',
-  styleUrl: './footer.css'
+  styleUrls: ['./footer.css']
 })
-export class Footer {
+export class Footer{
   @Input() footerData!: FooterInfo;
+  @Input() darkMode: boolean = false;
+
   cdate = new Date();
 }
